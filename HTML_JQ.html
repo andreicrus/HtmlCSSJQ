@@ -7,7 +7,7 @@
         <script>
                 /* $(function() {}); ia locul body.onload pentru o separare mai buna */		
 		$(function(){
-			$('tr').click(function() {
+			$('td').click(function() {
 	 		$(this).hide();       
 		});
 	});
@@ -28,7 +28,6 @@
                     var Pozitie = '<td>' + $('#Pozitie').val() + '</td>';
                     //Pozitie="inginer"
                     $('.main-table tr:last').after('<tr>' + Nume + Prenume + Varsta + Departament + Data_Angajare + Pozitie + '</tr>');
-
              });      
         });  
 
