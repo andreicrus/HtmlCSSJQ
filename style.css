@@ -1,11 +1,11 @@
 
 h4{
-border: 2.5px solid #333333;
-color:red;
-display:-webkit-box;
--webkit-box-pack:center;
--webkit-box-align:center;
-font-size: 1.1em;
+	border: 2.5px solid #333333;
+	color:red;
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	font-size: 1.1em;
 }
 p{
 	color:green;
