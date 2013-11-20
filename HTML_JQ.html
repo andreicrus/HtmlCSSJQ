@@ -3,37 +3,36 @@
 		<meta charset="utf-8">
 		<title>Tabel 1</title>
 		<link rel="stylesheet" href="style.css" />
-
- 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>
-                /* $(function() {}); ia locul body.onload pentru o separare mai buna */
-					
-					$(function(){
-						$('tr').click(function() {
-				 		$(this).hide();       
-					});
-				});
-                        $(function() {
-                                $('#formular').submit(function(e) {
-                                	e.preventDefault();
+                /* $(function() {}); ia locul body.onload pentru o separare mai buna */		
+		$(function(){
+			$('tr').click(function() {
+	 		$(this).hide();       
+		});
+	});
+        $(function() {
+                $('#formular').submit(function(e) {
+                	e.preventDefault();
 
-                                	var Nume = '<td>' + $('#Nume').val() + '</td>';
-	                                //Nume="asd";
-	                                var Prenume = '<td>' + $('#Prenume').val() + '</td>';
-	                               // Prenume="dd";
-	                                var Varsta = '<td>' + $('#Varsta').val() + '</td>';
-	                                //Varsta="22"
-	                                var Departament = '<td>' + $('#Departament').val() + '</td>';
-	                                //Departament="cva";
-	                                var Data_Angajare= '<td>' + $('#Data').val() + '</td>';
-	                                //Data_Angajare="13.12.312";
-	                                var Pozitie = '<td>' + $('#Pozitie').val() + '</td>';
-	                                //Pozitie="inginer"
-	                                $('.main-table tr:last').after('<tr>' + Nume + Prenume + Varsta + Departament + Data_Angajare + Pozitie + '</tr>');
-                                });      
-                        });      
-   </script>
+                	var Nume = '<td>' + $('#Nume').val() + '</td>';
+                    //Nume="asd";
+                    var Prenume = '<td>' + $('#Prenume').val() + '</td>';
+                   // Prenume="dd";
+                    var Varsta = '<td>' + $('#Varsta').val() + '</td>';
+                    //Varsta="22"
+                    var Departament = '<td>' + $('#Departament').val() + '</td>';
+                    //Departament="cva";
+                    var Data_Angajare= '<td>' + $('#Data').val() + '</td>';
+                    //Data_Angajare="13.12.312";
+                    var Pozitie = '<td>' + $('#Pozitie').val() + '</td>';
+                    //Pozitie="inginer"
+                    $('.main-table tr:last').after('<tr>' + Nume + Prenume + Varsta + Departament + Data_Angajare + Pozitie + '</tr>');
+
+             });      
+        });  
+
+  		</script>
 	</head>
 	<body>
 		<h4>
