@@ -1,0 +1,105 @@
+<htmL>
+	<head>
+		<meta charset="utf-8">
+		<title>Tabel 1</title>
+		<link rel="stylesheet" href="style.css" />
+
+ 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+                /* $(function() {}); ia locul body.onload pentru o separare mai buna */
+					
+					$(function(){
+						$('tr').click(function() {
+				 		$(this).hide();       
+					});
+				});
+                        $(function() {
+                                $('#formular').submit(function(e) {
+                                	e.preventDefault();
+
+                                	var Nume = '<td>' + $('#Nume').val() + '</td>';
+	                                //Nume="asd";
+	                                var Prenume = '<td>' + $('#Prenume').val() + '</td>';
+	                               // Prenume="dd";
+	                                var Varsta = '<td>' + $('#Varsta').val() + '</td>';
+	                                //Varsta="22"
+	                                var Departament = '<td>' + $('#Departament').val() + '</td>';
+	                                //Departament="cva";
+	                                var Data_Angajare= '<td>' + $('#Data').val() + '</td>';
+	                                //Data_Angajare="13.12.312";
+	                                var Pozitie = '<td>' + $('#Pozitie').val() + '</td>';
+	                                //Pozitie="inginer"
+	                                $('.main-table tr:last').after('<tr>' + Nume + Prenume + Varsta + Departament + Data_Angajare + Pozitie + '</tr>');
+                                });      
+                        });      
+   </script>
+	</head>
+	<body>
+		<h4>
+		Tabel nominal cu angajati la TeamNet
+	</h4>
+		<p>In aceasta seara se stabilesc ultimele patru echipe din Europa care merg la Rio si indiferent de rezultate, cel putin un nume urias al fotbalului european va vedea mondialul la televizor.Cristiano Ronaldo si Zlatan Ibrahimovici dau batalia finala, in Suedia, iar Franta va incerca sa repare dezastrul din tur in fata Ucrainei.Franta n-a mai ratat un mondial de 20 de ani, de la turneul final din Statele Unite (1994).</p>
+		<table class="main-table">
+			<thead>
+				<tr>
+					<td>Nume</td>
+					<td>Prenume</td>
+					<td>Varsta</td>
+					<td>Departament</td>
+					<td>Data_Angajare</td>
+					<td>Pozitie</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Crusitu</td>
+					<td>George</td>
+					<td>22</td>
+					<td>It</td>
+					<td>18.01.2010</td>
+					<td>Manager</td>
+				</tr>
+				<tr>
+					<td>Popescu</td>
+					<td>Ion</td>
+					<td>19</td>
+					<td>HR</td>
+					<td>20.08.2011</td>
+					<td>Sef</td>
+				</tr>
+				<tr>
+					<td>Mihail</td>
+					<td>Tudor</td>
+					<td>18</td>
+					<td>It</td>
+					<td>08.11.2012</td>
+					<td>Dezvoltator</td>
+				</tr>
+				<tr>
+					<td>Graitaru</td>
+					<td>Andrei</td>
+					<td>25</td>
+					<td>HR</td>
+					<td>12.09.2010</td>
+					<td>Manager</td>
+				</tr>
+			</tbody>
+		</table>
+		<form id="formular">
+                        <div>Nume </div>
+                        <input id="Nume" type="text" />
+                        <div>Prenume</div>
+                        <input id="Prenume" type="text" />
+                        <div>Varsta</div>
+                        <input id="Varsta" type="text" />
+                        <div>Departament</div>
+                        <input id="Departament" type="text" />
+                        <div>Data_Angajare</div>
+                        <input id="Data" type="text" />
+                        <div>Pozitie</div>
+                        <input id="Pozitie" type="text" />
+                        <input id="submit-formular" type="submit" />
+                </form>
+	</body>
+</htmL>

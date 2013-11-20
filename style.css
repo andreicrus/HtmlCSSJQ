@@ -1,0 +1,38 @@
+
+h4{
+	border: 2.5px solid #333333;
+	color:red;
+	display:-webkit-box;
+-webkit-box-pack:center;
+-webkit-box-align:center;
+font-size: 1.1em;
+}
+p{
+	color:green;
+	font-weight: bold;
+	font-size: 1em;
+}
+			.main-table {
+				border: 2.5px solid #333333;
+			}
+
+			.main-table thead {
+				background-color: blue;
+				font-weight: bold;
+				font-size: 1.2em;
+			}
+
+			.main-table thead tr td {
+				padding: 10px;
+			}
+
+			.main-table tbody tr td {
+				text-align: center;
+			}
+
+			#formular-submit {
+				border: 1px solid;
+				padding: 5px 25px;
+				cursor: pointer;
+			}
+	
