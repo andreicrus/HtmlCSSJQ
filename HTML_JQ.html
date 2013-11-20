@@ -4,12 +4,15 @@
 		<title>Tabel 1</title>
 		<link rel="stylesheet" href="style.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="java.js"></script>
 	</head>
 	<body>
-		<h4>
+	<h4>
 		Tabel nominal cu angajati la TeamNet
 	</h4>
-		<p>In aceasta seara se stabilesc ultimele patru echipe din Europa care merg la Rio si indiferent de rezultate, cel putin un nume urias al fotbalului european va vedea mondialul la televizor.Cristiano Ronaldo si Zlatan Ibrahimovici dau batalia finala, in Suedia, iar Franta va incerca sa repare dezastrul din tur in fata Ucrainei.Franta n-a mai ratat un mondial de 20 de ani, de la turneul final din Statele Unite (1994).</p>
+		<p>
+			In aceasta seara se stabilesc ultimele patru echipe din Europa care merg la Rio si indiferent de rezultate, cel putin un nume urias al fotbalului european va vedea mondialul la televizor.Cristiano Ronaldo si Zlatan Ibrahimovici dau batalia finala, in Suedia, iar Franta va incerca sa repare dezastrul din tur in fata Ucrainei.Franta n-a mai ratat un mondial de 20 de ani, de la turneul final din Statele Unite (1994).
+		</p>
 		<table class="main-table">
 			<thead>
 				<tr>
@@ -57,48 +60,19 @@
 			</tbody>
 		</table>
 		<form id="formular">
-                        <div>Nume </div>
-                        <input id="Nume" type="text" />
-                        <div>Prenume</div>
-                        <input id="Prenume" type="text" />
-                        <div>Varsta</div>
-                        <input id="Varsta" type="text" />
-                        <div>Departament</div>
-                        <input id="Departament" type="text" />
-                        <div>Data_Angajare</div>
-                        <input id="Data" type="text" />
-                        <div>Pozitie</div>
-                        <input id="Pozitie" type="text" />
-                        <input id="submit-formular" type="submit" />
-                </form>
-
-        <script>
-                /* $(function() {}); ia locul body.onload pentru o separare mai buna */		
-		$(function(){
-			$('td').click(function() {
-	 		$(this).hide();       
-		});
-	});
-        $(function() {
-                $('#formular').submit(function(e) {
-                	e.preventDefault();
-
-                	var Nume = '<td>' + $('#Nume').val() + '</td>';
-                    //Nume="asd";
-                    var Prenume = '<td>' + $('#Prenume').val() + '</td>';
-                   // Prenume="dd";
-                    var Varsta = '<td>' + $('#Varsta').val() + '</td>';
-                    //Varsta="22"
-                    var Departament = '<td>' + $('#Departament').val() + '</td>';
-                    //Departament="cva";
-                    var Data_Angajare= '<td>' + $('#Data').val() + '</td>';
-                    //Data_Angajare="13.12.312";
-                    var Pozitie = '<td>' + $('#Pozitie').val() + '</td>';
-                    //Pozitie="inginer"
-                    $('.main-table tr:last').after('<tr>' + Nume + Prenume + Varsta + Departament + Data_Angajare + Pozitie + '</tr>');
-             });      
-        });  
-  		</script>
-
+                    <div>Nume </div>
+                    <input id="Nume" type="text" />
+                    <div>Prenume</div>
+                    <input id="Prenume" type="text" />
+                    <div>Varsta</div>
+                    <input id="Varsta" type="text" />
+                    <div>Departament</div>
+                    <input id="Departament" type="text" />
+                    <div>Data_Angajare</div>
+                    <input id="Data" type="text" />
+                    <div>Pozitie</div>
+                    <input id="Pozitie" type="text" />
+                    <input id="submit-formular" type="submit" />
+            </form>
 	</body>
 </htmL>
